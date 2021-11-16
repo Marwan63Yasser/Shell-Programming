@@ -6,12 +6,12 @@ sum=0
 
 while [ `expr $n % 10` -ne 0 ]
 do
-result=`expr $number % 10`
+result=`expr $n % 10`
 
 sum=`expr $sum + $reverse`
 if [ $count -ne 0 ]
 then
-b=`$c + $result`
+b=`expr $c + $result`
 result=$b
 fi
 result=`expr $result * 10`
